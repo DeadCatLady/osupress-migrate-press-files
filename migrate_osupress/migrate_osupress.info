@@ -1,0 +1,12 @@
+name = "Migrations from OsuPress"
+description = "Module to migrate osupress's books and authors to make a relationship between them"
+package = "Migration"
+core = 7.x
+
+dependencies[] = migrate
+dependencies[] = migrate_d2d
+
+files[] = osupress.inc
+files[] = migrate_osupress.migrate.inc
+files[] = osupress_author.inc
+
