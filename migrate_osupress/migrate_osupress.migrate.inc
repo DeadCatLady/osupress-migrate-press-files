@@ -4,6 +4,7 @@
  * Impelements hook_migrate_api().
  */
 function migrate_osupress_migrate_api() {
+  
   // Define our migrate array to start. We will add to it later.
   $api = array(
     'api' => 2,
@@ -28,7 +29,7 @@ function migrate_osupress_migrate_api() {
     'class_name' => 'MigratePressBookMIgration',
     'group_name' => 'press',
     'source_type' => 'book',
-    'destination_type' => 'press_book', //This is the book that will need to be changed to the new content type
+    'destination_type' => 'press_book', 
     'machine_name' => 'Press Book',
   );
 
@@ -38,7 +39,7 @@ function migrate_osupress_migrate_api() {
     'class_name' => 'MigratePressAuthorMigration',
     'group_name' => 'press',
     'source_type' => 'author',
-    'destination_type' => 'press_author', //This is the book that will need to be changed to the new content type
+    'destination_type' => 'press_author', 
     'machine_name' => 'Press Author',
   );
 
